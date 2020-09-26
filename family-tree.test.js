@@ -21,10 +21,9 @@ describe('Family Tree', function () {
     const father = me.parents[1]
     expect(father.name).toEqual('Sandor Istvan')
   })
-  test('My father age ', function () {
+  test('My parents ', function () {
     const me = familyTree[0]
-    const father = me.parents[1]
-    expect(father.age).toEqual(64)
+    expect(me.childOf()).toEqual('Ilona & Sandor Istvan')
   })
   test('My mother age ', function () {
     const me = familyTree[0]
